@@ -1,0 +1,9 @@
+f=open('entities.htm','r')
+html=f.read()
+f.close()
+f=open('entities.htm','w')
+#print(type(html))
+print('----->',html)
+html+=html
+f.write(html)
+f.close()
